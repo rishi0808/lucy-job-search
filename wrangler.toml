@@ -4,11 +4,14 @@ command = "pip install -r requirements.txt"
 [site]
 bucket = "./"
 
+[pages]
+build_output_dir = "./build"
+
 [env.production]
 name = "lucy-job-search"
 
 [env.production.build]
-command = "pip install -r requirements.txt"
+command = "pip install -r requirements.txt && mkdir -p build && cp -r *.py *.txt *.sh *.toml build/"
 
 [env.production.build.environment]
 PYTHON_VERSION = "3.10" 

@@ -25,9 +25,6 @@ venv/
 jobspy_env/
 ENV/
 
-# Streamlit
-.streamlit/
-
 # IDE
 .idea/
 .vscode/
