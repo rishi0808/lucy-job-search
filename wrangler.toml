@@ -1,0 +1,14 @@
+[build]
+command = "pip install -r requirements.txt"
+
+[site]
+bucket = "./"
+
+[env.production]
+name = "lucy-job-search"
+
+[env.production.build]
+command = "pip install -r requirements.txt"
+
+[env.production.build.environment]
+PYTHON_VERSION = "3.10" 
